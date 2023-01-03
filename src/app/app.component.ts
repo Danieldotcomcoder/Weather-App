@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { WeatherService } from './services/weather.service';
+import { Current } from './models/weather.model';
 
 @Component({
   selector: 'app-root',
@@ -12,10 +13,13 @@ export class AppComponent implements OnInit {
 
   }
 
+  weatherData?: Current;
+
   ngOnInit(): void {
-      this.weatherService.getWeatherData('London', 'No')
+      this.weatherService.getWeatherData('Beqaa', 'No')
       .subscribe({
         next: (response: any) => {
+          this.weatherData = response;
           console.log(response);
           
         }
