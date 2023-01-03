@@ -4,9 +4,9 @@
 
 export const environment = {
   production: false,
-  weatherApiBaseUrl: 'https://open-weather13.p.rapidapi.com/',
+  weatherApiBaseUrl: 'https://aerisweather1.p.rapidapi.com/sunmoon/',
   XRapidAPIHostHeaderName: 'XRapidAPIHost',
-  XRapidAPIHostHeaderValue: 'open-weather13.p.rapidapi.com',
+  XRapidAPIHostHeaderValue: 'aerisweather1.p.rapidapi.com',
   XRapidAPIKeyHeaderName: 'XRapidAPIKey',
   XRapidAPIKeyHeaderValue: '03518c50f0mshb2f93a5c3fbb56fp1a5e6ajsn175d3c928506'
 };
