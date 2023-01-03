@@ -13,7 +13,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-      this.weatherService.getWeatherData('ankara, tr')
+      this.weatherService.getWeatherData('London', 'No')
       .subscribe({
         next: (response: any) => {
           console.log(response);
