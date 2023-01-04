@@ -1,47 +1,48 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-   
 }
 
 body {
+
     background-image: url("src\assets\weather.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     font-family: Verdana;
-    color: rgb(245, 149, 5);
+    color: wheat;
     font-size: 17px;
-    display: flex;
    
 }
 
 .weather-data {
-    position: relative;
-    top: 400px;
-    right: -150px;
-    width: 100%;
+    margin-top: 30%;
+    margin-left: 10%;
+    width: 30%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: 1px solid black;
     height: 75px;
+    border: 1px solid black;
 }
 
 .temperature {
     white-space: nowrap;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 800;
 }
 
 .time-location {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 700;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
-    border: 1px solid black;
+    justify-content: flex-start;
+    margin-left: 5%;
+}
+
+.time {
+    font-size: 15px;
 }
 
 .condition {

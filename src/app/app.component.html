@@ -3,7 +3,7 @@
 
 
     <div class="weather-data">
-      <div class="temperature">{{ weatherData.current.temp_c | number: '1.0-0'}}°C</div>
+      <div class="temperature">{{ weatherData.current.temp_c | number: '1.0-0'}}°</div>
       <div class="time-location">
         <div class="location">{{ weatherData.location.name }}</div>
         <div class="time"> {{weatherData.location.localtime}}</div>
@@ -14,6 +14,5 @@
     </div>
     </div>
   </div>
-
+  <router-outlet></router-outlet>
 </div>
-<router-outlet></router-outlet>
