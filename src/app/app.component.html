@@ -1,18 +1,19 @@
 <div class="container" *ngIf="weatherData">
   <div class="main-data">
-  
+
 
     <div class="weather-data">
       <div class="temperature">{{ weatherData.current.temp_c | number: '1.0-0'}}°C</div>
       <div class="time-location">
-        <div class="location">{{ weatherData.current.temp_c | number: '1.0-0'}}°C</div>
-        <div class="time"> {{weatherData.location.name}}</div>
+        <div class="location">{{ weatherData.location.name }}</div>
+        <div class="time"> {{weatherData.location.localtime}}</div>
       </div>
-      
-     
-
+      <div class="condition">
+      <img class="condition-icon" src="{{weatherData.current.condition.icon}}" alt="">
+      <div class="condition-text">{{weatherData.current.condition.text}}</div>
+    </div>
     </div>
   </div>
 
 </div>
-    <router-outlet></router-outlet>
+<router-outlet></router-outlet>
