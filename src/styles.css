@@ -77,6 +77,9 @@ body {
 
 .weather-details {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border: 1px solid blue;
     width: 30%;
     height: 80%;
@@ -86,3 +89,13 @@ body {
     border-radius: 5px 5px 5px;
     box-shadow: 5px 5px 5px 5px black;
 } 
+
+.more-information {
+    height: 50%;
+    border: 1px solid black;
+}
+
+.air-quality {
+    height: 50%;
+    border: 1px solid black;
+}
