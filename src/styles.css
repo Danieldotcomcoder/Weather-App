@@ -1,18 +1,16 @@
 * {
     margin: 0;
     padding: 0;
-    
 }
 
 body {
-
+    display: block;
     background-image: url("src\assets\weather.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     font-family: Verdana;
     color: wheat;
     font-size: 17px;
-    height: 100%; 
 }
 
 .weather-data {
@@ -77,3 +75,14 @@ body {
     outline: none;
   }
 
+.weather-details {
+    position: absolute;
+    border: 1px solid blue;
+    width: 30%;
+    height: 80%;
+    left: 65%;
+    bottom: 10%;
+    
+    border-radius: 5px 5px 5px;
+    box-shadow: 5px 5px 5px 5px black;
+} 
