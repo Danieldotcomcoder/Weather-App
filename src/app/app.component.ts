@@ -26,7 +26,7 @@ export class AppComponent implements OnInit {
     this.cityName = '';
   }
   private getWeatherData(cityName: string) {
-    this.weatherService.getWeatherData(cityName, 'No')
+    this.weatherService.getWeatherData(cityName, 'Yes')
       .subscribe({
         next: (response: any) => {
           this.weatherData = response;

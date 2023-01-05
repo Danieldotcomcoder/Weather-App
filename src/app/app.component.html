@@ -1,4 +1,3 @@
-
 <div class="search">
   <form #form="ngForm" (submit)="onSubmit()">
     <input type="text" name="search" class="searchTerm" placeholder="Search City" name="city" [(ngModel)]="cityName">
@@ -15,16 +14,50 @@
         <div class="time"> {{weatherData.location.localtime}}</div>
       </div>
       <div class="condition">
-      <img class="condition-icon" src="{{weatherData.current.condition.icon}}" alt="">
-      <div class="condition-text">{{weatherData.current.condition.text}}</div>
-    </div>
+        <img class="condition-icon" src="{{weatherData.current.condition.icon}}" alt="">
+        <div class="condition-text">{{weatherData.current.condition.text}}</div>
+      </div>
     </div>
   </div>
-  
+
 </div>
 
 <div class="weather-details">
-  <div class="more-information">test</div>
-  <div class="air-quality">test</div>
+  <h4>More Information: </h4>
+  <div class="more-information">
+
+    <div class="feels-like">
+      <img src="../assets/temp.png" alt="">
+      <span>Feels: </span>
+      <div class="value">
+
+      </div>
+    </div>
+    <div class="humidity">
+      <img src="../assets/humidity.png" alt="">
+      <span>Humidity</span>
+      <div class="value">
+
+      </div>
+    </div>
+    <div class="pressure">
+      <img src="../assets/barometers.png" alt="">
+      <span>Atmospheric Pressure</span>
+      <div class="value">
+
+      </div>
+    </div>
+    <div class="wind">
+
+      <img src="../assets/wind.png" alt="">
+      <span>Wind</span>
+      <div class="value">
+
+      </div>
+    </div>
+  </div>
+  <div class="air-quality">
+    <h4>Air Quality</h4>
+  </div>
 
 </div>

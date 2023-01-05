@@ -86,16 +86,25 @@ body {
     left: 65%;
     bottom: 10%;
     
-    border-radius: 5px 5px 5px;
+    border-radius: 15px;
     box-shadow: 5px 5px 5px 5px black;
 } 
 
 .more-information {
+    margin: 1%;
+    padding: 1%;
     height: 50%;
-    border: 1px solid black;
+    
+}
+
+.more-information img {
+    width: 30px;
+    height: 30px;
 }
 
 .air-quality {
+    margin: 1%;
+    padding: 1%;
     height: 50%;
-    border: 1px solid black;
+    
 }
