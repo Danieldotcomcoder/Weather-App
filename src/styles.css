@@ -17,12 +17,12 @@ body {
 .weather-data {
     margin-top: 30%;
     margin-left: 10%;
-    width: 30%;
+    width: 35%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: 75px;
-    border: 1px solid black;
+    
 }
 
 .temperature {
@@ -38,7 +38,6 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    margin-left: 5%;
 }
 
 .time {
