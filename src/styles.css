@@ -81,19 +81,22 @@ body {
     flex-direction: column;
     justify-content: space-between;
     border: 1px solid blue;
-    width: 30%;
+    width: 32%;
     height: 80%;
     left: 65%;
     bottom: 10%;
-    
     border-radius: 15px;
     box-shadow: 5px 5px 5px 5px black;
 } 
 
 .more-information {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     margin: 1%;
     padding: 1%;
     height: 50%;
+    align-items: center;
+    justify-content: center;
     
 }
 
@@ -107,4 +110,40 @@ body {
     padding: 1%;
     height: 50%;
     
+}
+
+.block-info {
+    display: flex;
+    flex-direction: column;
+   justify-content: flex-start;
+    
+}
+
+.block {
+    display: flex;
+    border: 1px solid transparent;
+    justify-content: flex-start;
+   
+    color: black;
+    
+    
+}
+
+.block span {
+    font-size: 1.1rem;
+    color: black;
+    font-weight: 500;
+
+}
+
+.weather-details h4 {
+    align-self: center;
+    color: black;
+
+}
+
+.value {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-left: 5%;
 }

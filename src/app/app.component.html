@@ -22,42 +22,50 @@
 
 </div>
 
-<div class="weather-details">
-  <h4>More Information: </h4>
+<div class="weather-details" *ngIf="weatherData">
+  <h4>More Information</h4>
   <div class="more-information">
 
-    <div class="feels-like">
-      <img src="../assets/temp.png" alt="">
-      <span>Feels: </span>
+    <div class="block">
+      <div class="block-info">
+        <img src="../assets/temp.png" alt="">
+        <span>Feels Like</span>
+      </div>
+         
       <div class="value">
-
+        {{ weatherData.current.feelslike_c | number: '1.0-0'}} °
       </div>
     </div>
-    <div class="humidity">
-      <img src="../assets/humidity.png" alt="">
-      <span>Humidity</span>
+    <div class="block">
+      <div class="block-info"><img src="../assets/humidity.png" alt="">
+        <span>Humidity</span>
+      </div>
+      
       <div class="value">
-
+        {{ weatherData.current.humidity| number: '1.0-0'}} %
       </div>
     </div>
-    <div class="pressure">
-      <img src="../assets/barometers.png" alt="">
-      <span>Atmospheric Pressure</span>
+    <div class="block">
+      <div class="block-info">
+        <img src="../assets/barometers.png" alt="">
+        <span>Pressure</span>
+      </div>
       <div class="value">
-
+        {{ weatherData.current.pressure_mb| number: '1.0-0'}} mb
       </div>
     </div>
-    <div class="wind">
 
-      <img src="../assets/wind.png" alt="">
-      <span>Wind</span>
+
+    <div class="block">
+      <div class="block-info"> <img src="../assets/wind.png" alt="">
+        <span>Wind</span>
+      </div>
+
       <div class="value">
-
+        {{ weatherData.current.wind_kph| number: '1.0-0'}} Km/h
       </div>
     </div>
-  </div>
-  <div class="air-quality">
-    <h4>Air Quality</h4>
-  </div>
-
+</div>
+<div class="air-quality">
+  <h4>Air Quality</h4>
 </div>
