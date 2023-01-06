@@ -89,6 +89,23 @@
       </div>
     </div>
     <div class="air-quality-result">
-      
+      <div *ngIf="weatherData.current.air_quality.pm2_5 <= 12">
+        Healthy
+      </div>
+      <div *ngIf="weatherData.current.air_quality.pm2_5 > 12 && weatherData.current.air_quality.pm2_5 <= 35.4">
+        Moderate
+      </div>
+      <div *ngIf="weatherData.current.air_quality.pm2_5 > 35.4 && weatherData.current.air_quality.pm2_5 <= 55.4">
+        Unhealthy for Sensitive Groups
+      </div>
+      <div *ngIf="weatherData.current.air_quality.pm2_5 > 55.4 && weatherData.current.air_quality.pm2_5 <= 150.4">
+        Unhealthy
+      </div>
+      <div *ngIf="weatherData.current.air_quality.pm2_5 > 150.4 && weatherData.current.air_quality.pm2_5 <= 250.4">
+        Very Unhealthy
+      </div>
+      <div *ngIf="weatherData.current.air_quality.pm2_5 > 250.4 && weatherData.current.air_quality.pm2_5 <= 500.4">
+        Hazardous
+      </div>
     </div>
   </div>
