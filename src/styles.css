@@ -1,149 +1,161 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    display: block;
-    background-image: url("src\assets\weather.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: Verdana;
-    color: wheat;
-    font-size: 17px;
+  display: block;
+  background-image: url("src\assets\weather.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Verdana;
+  color: wheat;
+  font-size: 17px;
 }
 
 .weather-data {
-    margin-top: 30%;
-    margin-left: 10%;
-    width: 35%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 75px;
+  margin-top: 30%;
+  margin-left: 10%;
+  width: 35%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 75px;
 }
 
 .temperature {
-    white-space: nowrap;
-    font-size: 50px;
-    font-weight: 800;
+  white-space: nowrap;
+  font-size: 50px;
+  font-weight: 800;
 }
 
 .time-location {
-    font-size: 30px;
-    font-weight: 700;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+  font-size: 30px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .time {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 .condition {
-    font-size: 20px;
-    font-weight: 700;
-    display: flex;
-    flex-direction: column;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
 }
 
 .condition-icon {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 .search {
-    margin-left: 40%;
-    margin-top: 1%;
-    width: 15%;
-    display: flex;
-  }
-  
-  .searchTerm {
-    width: 100%;
-    border: 3px solid #00B4CC;
-    padding: 5px;
-    height: 20px;
-    border-radius: 5px 5px 5px 5px;
-    color: #9DBFAF;
-  }
-  
-  .searchTerm:focus{
-    color: #00B4CC;
-    outline: none;
-  }
+  margin-left: 40%;
+  margin-top: 1%;
+  width: 15%;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00b4cc;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 5px 5px 5px;
+  color: #9dbfaf;
+}
+
+.searchTerm:focus {
+  color: #00b4cc;
+  outline: none;
+}
 
 .weather-details {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border: 1px solid blue;
-    width: 32%;
-    height: 80%;
-    left: 65%;
-    bottom: 10%;
-    border-radius: 15px;
-    box-shadow: 5px 5px 5px 5px black;
-} 
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid blue;
+  width: 32%;
+  height: 80%;
+  left: 65%;
+  bottom: 10%;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px 5px black;
+}
 
 .more-information {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 1%;
+  padding: 1%;
+  height: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.more-information img {
+  width: 30px;
+  height: 30px;
+}
+
+.air-quality {
+  margin: 1%;
+  padding: 1%;
+  height: 50%;
+}
+
+.block-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.block {
+  display: flex;
+  border: 1px solid transparent;
+  justify-content: flex-start;
+  color: black;
+}
+
+.block span {
+  font-size: 1.1rem;
+  color: black;
+  font-weight: 500;
+}
+
+.weather-details h4 {
+  align-self: center;
+  color: black;
+}
+
+.value {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-left: 5%;
+}
+
+.air-quality h4 {
+  text-align: center;
+}
+
+.air-quality-box {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 30% 30% 30%;
     margin: 1%;
     padding: 1%;
     height: 50%;
     align-items: center;
     justify-content: center;
-    
-}
-
-.more-information img {
-    width: 30px;
-    height: 30px;
-}
-
-.air-quality {
-    margin: 1%;
-    padding: 1%;
-    height: 50%;
-    
-}
-
-.block-info {
-    display: flex;
-    flex-direction: column;
-   justify-content: flex-start;
-    
-}
-
-.block {
-    display: flex;
-    border: 1px solid transparent;
-    justify-content: flex-start;
-   
     color: black;
-    
-    
-}
+    font-weight: 600;
+  }
 
-.block span {
-    font-size: 1.1rem;
-    color: black;
-    font-weight: 500;
+.element {
 
-}
-
-.weather-details h4 {
-    align-self: center;
-    color: black;
-
-}
-
-.value {
-    text-align: center;
-    font-size: 1.2rem;
-    margin-left: 5%;
 }

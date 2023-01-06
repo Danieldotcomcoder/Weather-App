@@ -31,7 +31,7 @@
         <img src="../assets/temp.png" alt="">
         <span>Feels Like</span>
       </div>
-         
+
       <div class="value">
         {{ weatherData.current.feelslike_c | number: '1.0-0'}} °
       </div>
@@ -40,7 +40,7 @@
       <div class="block-info"><img src="../assets/humidity.png" alt="">
         <span>Humidity</span>
       </div>
-      
+
       <div class="value">
         {{ weatherData.current.humidity| number: '1.0-0'}} %
       </div>
@@ -65,7 +65,27 @@
         {{ weatherData.current.wind_kph| number: '1.0-0'}} Km/h
       </div>
     </div>
-</div>
-<div class="air-quality">
-  <h4>Air Quality</h4>
-</div>
+  </div>
+  <div class="air-quality">
+    <h4>Air Quality</h4>
+    <div class="air-quality-box" *ngIf="weatherData">
+      <div class="element">
+        CO:  {{weatherData.current.air_quality.co | number: '1.0-0'}}
+      </div>
+      <div class="element">
+        NO2: {{weatherData.current.air_quality.no2 | number: '1.0-0'}}
+      </div>
+      <div class="element">
+        O3: {{weatherData.current.air_quality.o3 | number: '1.0-0'}}
+      </div>
+      <div class="element">
+        SO2: {{weatherData.current.air_quality.so2 | number: '1.0-0'}}
+      </div>
+      <div class="element">
+        PM2.5: {{weatherData.current.air_quality.pm2_5 | number: '1.0-0'}}
+      </div>
+      <div class="element">
+        PM10: {{weatherData.current.air_quality.pm10 | number: '1.0-0'}}
+      </div>
+    </div>
+  </div>
