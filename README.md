@@ -9,9 +9,10 @@
 - Visual Studio Code
 ## Live Demo
 
-[Link]()
+[Link](https://sage-strudel-f10c3c.netlify.app)
 
 ## Authors
+
  Daniel Shdeed
 
 - [GitHub](https://github.com/Danieldotcomcoder)
