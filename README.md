@@ -1,27 +1,31 @@
-# WeatherApp
+# Weather App
+ A weather web application that gets real-time data from the weather api and display weather information and air quality of any city you search for.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+## Built With
+- Angular
+- CSS3
+## Technologies used
+- Github
+- Visual Studio Code
+## Live Demo
 
-## Development server
+[Link]()
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Authors
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+ Daniel Shdeed
 
-## Build
+- [GitHub](https://github.com/Danieldotcomcoder)
+- [Twitter](https://twitter.com/DannyDotcoder)
+- [LinkedIn](https://www.linkedin.com/in/daniel-shdeed/)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 🤝 Contributing
 
-## Running unit tests
+Contributions, issues, and feature requests are welcome!
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Feel free to check the [issues page](../../issues/).
 
-## Running end-to-end tests
+## Show your support
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Give a ⭐️ if you like this project!
