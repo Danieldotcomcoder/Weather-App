@@ -8,15 +8,26 @@ body {
   background-image: url("src\assets\weather.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: Verdana;
-  color: wheat;
+  color: #fff;
+  text-shadow:
+  /* White glow */
+  0 0 5px #fff,
+ 
+  /* Green glow */
+  0 0 42px #0fa,
+  0 0 50px #0fa,
+  0 0 60px #0fa,
+  0 0 82px #0fa,
+  0 0 100px #0fa;
+ 
   font-size: 17px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .weather-data {
-  margin-top: 30%;
+  margin-top: 20%;
   margin-left: 10%;
-  width: 35%;
+  width: 25%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -133,7 +144,9 @@ body {
 
 .weather-details h4 {
   align-self: center;
-  color: black;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
 }
 
 .value {
