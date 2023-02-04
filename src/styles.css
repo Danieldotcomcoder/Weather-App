@@ -187,19 +187,39 @@ body {
 }
 
 @media screen and (max-width: 992px) {
-
-
-  .search {
-    margin-left: 35%;
-    margin-top: 2%;
-    width: 25%;
+  body {
+    display: flex;
+    flex-direction: column;
   }
 
-  
-  .more-information {
-    display: none;
+  .container {
+    display: flex;
+    width: 100%;
+  }
+  .search {
+    margin-left: 30%;
+    margin-top: 5%;
+    width: 35%;
+  }
+
+  .weather-data {
+    width: 100%;
+  }
+
+  .temperature {
+    font-size: 45px;
+  }
+
+  .time-location {
+    font-size: 35px;
   }
   .weather-details {
-    display: none;
+    position: relative;
+    left: 0%;
+    top: 5%;
+    display: flex;
+    height: 70%;
+    margin-left: 2%;
+    width: 95%;
   }
 }
