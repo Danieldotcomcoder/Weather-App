@@ -1,5 +1,5 @@
 # Weather App
- A weather web application that gets real-time data from the weather api and display weather information and air quality of any city you search for.
+ A weather web application that gets real-time data from the weather api and display weather information and air quality of any city you want.
 
 ## Built With
 - Angular
